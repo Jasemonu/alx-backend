@@ -3,5 +3,5 @@
 # Resources
 
 ## Read or watch:
-* [REST API Design: Pagination](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/#pagination)
-* [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
+* [REST API Design: Pagination](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/#pagination)(right-click and open in a new tab/window)
+* [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)(right-click and open in a new tab/window)
