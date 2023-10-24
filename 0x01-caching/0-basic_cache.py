@@ -7,6 +7,12 @@ from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """__summary__"""
+
+    def __init__(self):
+        """__summary__"""
+        super().__init__()
+
     def put(self, key, item):
         """Check if key or item is None, and don't do anything in that case"""
         if key is not None and item is not None:
