@@ -19,7 +19,7 @@ class FIFOCache(BaseCaching):
             if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                 # Get the first item added to the cache (oldest item)
                 first_item_key = self.queue.pop(0)
-                print(f"DISCARD: {first_item_key}\n")
+                print(f"DISCARD: {first_item_key}")
                 # Remove the oldest item from the cache
                 del self.cache_data[first_item_key]
 
