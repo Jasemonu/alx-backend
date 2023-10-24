@@ -4,12 +4,13 @@
 """
 
 from base_caching import BaseCaching
+from collections import deque
 
 
 class FIFOCache(BaseCaching):
     def __init__(self):
         super().__init__()
-        self.queue = []  # FIFO queue to keep track of the order of items
+        self.queue = deque()
 
     def put(self, key, item):
         if key is not None and item is not None:
