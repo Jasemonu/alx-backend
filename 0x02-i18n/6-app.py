@@ -44,7 +44,7 @@ def before_request() -> None:
 
 @babel.localeselector
 def get_locale():
-        # Locale from user settings
+    # Locale from user settings
     if g.user:
         locale = g.user.get('locale')
         if locale and locale in app.config['LANGUAGES']:
