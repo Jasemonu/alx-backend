@@ -26,23 +26,20 @@ users = {
 
 
 def get_user():
-    """Returns a user dictionary"""
-    user_id = request.args.get('login_as')
-
-    if user_id:
-        try:
-            user_id = int(user_id)
-            if user_id in users:
-                return users[user_id]
-            return None
-        except Exception:
-            return None
+    """returns a user dictionary or None if the ID cannot be found
+    """
+    login_id = request.args.get('login_as')
+    if login_id:
+        return users.get(int(login_id))
+    return None
 
 
 @app.before_request
-def before_request():
-    """Finds the user"""
-    g.user = get_user()
+def before_request() -> None:
+    """_summary_
+    """
+    user = get_user()
+    g.user = user
 
 
 @babel.localeselector
