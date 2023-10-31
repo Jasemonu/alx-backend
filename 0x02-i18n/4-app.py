@@ -32,7 +32,7 @@ def get_locale():
 @app.route('/')
 def index():
     """A route declaration"""
-    return render_template('1-index.html')
+    return render_template('4-index.html')
 
 
 if __name__ == '__main__':
